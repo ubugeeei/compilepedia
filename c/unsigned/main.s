@@ -15,6 +15,15 @@ _main:                                  ## @main
 	movb	$0, -5(%rbp)
 	movb	$1, -6(%rbp)
 	movb	$-1, -7(%rbp)
+	movl	$0, -12(%rbp)
+	movl	$1, -16(%rbp)
+	movl	$-1, -20(%rbp)
+	movw	$0, -22(%rbp)
+	movw	$1, -24(%rbp)
+	movw	$-1, -26(%rbp)
+	movq	$0, -40(%rbp)
+	movq	$1, -48(%rbp)
+	movq	$-1, -56(%rbp)
 	popq	%rbp
 	retq
 	.cfi_endproc

@@ -8,10 +8,28 @@ define i32 @main() #0 {
   %2 = alloca i8, align 1
   %3 = alloca i8, align 1
   %4 = alloca i8, align 1
+  %5 = alloca i32, align 4
+  %6 = alloca i32, align 4
+  %7 = alloca i32, align 4
+  %8 = alloca i16, align 2
+  %9 = alloca i16, align 2
+  %10 = alloca i16, align 2
+  %11 = alloca i64, align 8
+  %12 = alloca i64, align 8
+  %13 = alloca i64, align 8
   store i32 0, i32* %1, align 4
   store i8 0, i8* %2, align 1
   store i8 1, i8* %3, align 1
   store i8 -1, i8* %4, align 1
+  store i32 0, i32* %5, align 4
+  store i32 1, i32* %6, align 4
+  store i32 -1, i32* %7, align 4
+  store i16 0, i16* %8, align 2
+  store i16 1, i16* %9, align 2
+  store i16 -1, i16* %10, align 2
+  store i64 0, i64* %11, align 8
+  store i64 1, i64* %12, align 8
+  store i64 -1, i64* %13, align 8
   ret i32 0
 }
 
