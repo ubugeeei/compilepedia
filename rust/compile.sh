@@ -1,0 +1,1 @@
+rustc main.rs && rustc main.rs --emit asm && rustc main.rs --emit=llvm-ir && hexdump -C main > hexdumped

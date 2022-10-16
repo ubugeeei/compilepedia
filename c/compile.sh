@@ -1,0 +1,1 @@
+gcc main.c && gcc -S -emit-llvm main.c && gcc -S main.c && hexdump -C a.out > hexdumped
