@@ -1,1 +1,1 @@
-gcc main.c && gcc -S -emit-llvm main.c && gcc -S main.c && hexdump -C a.out > hexdumped
+gcc main.c && gcc -S -emit-llvm main.c && gcc -S main.c && gcc -c main.c && gobjdump -d -M intel main.o > objdumped && hexdump -C a.out > hexdumped
