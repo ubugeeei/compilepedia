@@ -1,0 +1,35 @@
+
+main.o:     file format mach-o-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <_main>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	48 83 ec 30          	sub    rsp,0x30
+   8:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [rbp-0x4],0x0
+   f:	bf 80 00 00 00       	mov    edi,0x80
+  14:	e8 00 00 00 00       	call   19 <_main+0x19>
+  19:	48 89 45 f0          	mov    QWORD PTR [rbp-0x10],rax
+  1d:	bf 20 00 00 00       	mov    edi,0x20
+  22:	be 04 00 00 00       	mov    esi,0x4
+  27:	e8 00 00 00 00       	call   2c <_main+0x2c>
+  2c:	48 89 45 e8          	mov    QWORD PTR [rbp-0x18],rax
+  30:	bf 80 00 00 00       	mov    edi,0x80
+  35:	e8 00 00 00 00       	call   3a <_main+0x3a>
+  3a:	48 89 45 e0          	mov    QWORD PTR [rbp-0x20],rax
+  3e:	48 8b 7d e0          	mov    rdi,QWORD PTR [rbp-0x20]
+  42:	be 00 01 00 00       	mov    esi,0x100
+  47:	e8 00 00 00 00       	call   4c <_main+0x4c>
+  4c:	48 89 45 d8          	mov    QWORD PTR [rbp-0x28],rax
+  50:	48 8b 7d f0          	mov    rdi,QWORD PTR [rbp-0x10]
+  54:	e8 00 00 00 00       	call   59 <_main+0x59>
+  59:	48 8b 7d e8          	mov    rdi,QWORD PTR [rbp-0x18]
+  5d:	e8 00 00 00 00       	call   62 <_main+0x62>
+  62:	48 8b 7d e0          	mov    rdi,QWORD PTR [rbp-0x20]
+  66:	e8 00 00 00 00       	call   6b <_main+0x6b>
+  6b:	31 c0                	xor    eax,eax
+  6d:	48 83 c4 30          	add    rsp,0x30
+  71:	5d                   	pop    rbp
+  72:	c3                   	ret
