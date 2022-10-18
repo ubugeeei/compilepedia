@@ -1,0 +1,21 @@
+
+main.o:     file format mach-o-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <_main>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	31 c0                	xor    eax,eax
+   6:	f3 0f 10 05 26 00 00 	movss  xmm0,DWORD PTR [rip+0x26]        # 34 <_main+0x34>
+   d:	00 
+   e:	f3 0f 10 0d 22 00 00 	movss  xmm1,DWORD PTR [rip+0x22]        # 38 <_main+0x38>
+  15:	00 
+  16:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [rbp-0x4],0x0
+  1d:	0f 57 d2             	xorps  xmm2,xmm2
+  20:	f3 0f 11 55 f8       	movss  DWORD PTR [rbp-0x8],xmm2
+  25:	f3 0f 11 4d f4       	movss  DWORD PTR [rbp-0xc],xmm1
+  2a:	f3 0f 11 45 f0       	movss  DWORD PTR [rbp-0x10],xmm0
+  2f:	5d                   	pop    rbp
+  30:	c3                   	ret
