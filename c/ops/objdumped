@@ -1,0 +1,59 @@
+
+main.o:     file format mach-o-x86-64
+
+
+Disassembly of section .text:
+
+0000000000000000 <_main>:
+   0:	55                   	push   rbp
+   1:	48 89 e5             	mov    rbp,rsp
+   4:	31 c0                	xor    eax,eax
+   6:	c7 45 fc 00 00 00 00 	mov    DWORD PTR [rbp-0x4],0x0
+   d:	c7 45 f8 54 00 00 00 	mov    DWORD PTR [rbp-0x8],0x54
+  14:	c7 45 f4 00 00 00 00 	mov    DWORD PTR [rbp-0xc],0x0
+  1b:	c7 45 f0 e4 06 00 00 	mov    DWORD PTR [rbp-0x10],0x6e4
+  22:	c7 45 ec 01 00 00 00 	mov    DWORD PTR [rbp-0x14],0x1
+  29:	c7 45 e8 00 00 00 00 	mov    DWORD PTR [rbp-0x18],0x0
+  30:	c7 45 e4 01 00 00 00 	mov    DWORD PTR [rbp-0x1c],0x1
+  37:	c7 45 e0 00 00 00 00 	mov    DWORD PTR [rbp-0x20],0x0
+  3e:	c7 45 dc 00 00 00 00 	mov    DWORD PTR [rbp-0x24],0x0
+  45:	c7 45 d8 01 00 00 00 	mov    DWORD PTR [rbp-0x28],0x1
+  4c:	c7 45 d4 01 00 00 00 	mov    DWORD PTR [rbp-0x2c],0x1
+  53:	c7 45 d0 00 00 00 00 	mov    DWORD PTR [rbp-0x30],0x0
+  5a:	c7 45 cc 00 00 00 00 	mov    DWORD PTR [rbp-0x34],0x0
+  61:	c7 45 c8 2a 00 00 00 	mov    DWORD PTR [rbp-0x38],0x2a
+  68:	c7 45 c4 2a 00 00 00 	mov    DWORD PTR [rbp-0x3c],0x2a
+  6f:	c7 45 c0 00 00 00 00 	mov    DWORD PTR [rbp-0x40],0x0
+  76:	c7 45 bc d5 ff ff ff 	mov    DWORD PTR [rbp-0x44],0xffffffd5
+  7d:	c7 45 b8 04 00 00 00 	mov    DWORD PTR [rbp-0x48],0x4
+  84:	c7 45 b4 2a 00 00 00 	mov    DWORD PTR [rbp-0x4c],0x2a
+  8b:	c7 45 b0 2a 00 00 00 	mov    DWORD PTR [rbp-0x50],0x2a
+  92:	8b 4d b0             	mov    ecx,DWORD PTR [rbp-0x50]
+  95:	83 c1 2a             	add    ecx,0x2a
+  98:	89 4d b0             	mov    DWORD PTR [rbp-0x50],ecx
+  9b:	8b 4d b0             	mov    ecx,DWORD PTR [rbp-0x50]
+  9e:	83 e9 2a             	sub    ecx,0x2a
+  a1:	89 4d b0             	mov    DWORD PTR [rbp-0x50],ecx
+  a4:	6b 4d b0 2a          	imul   ecx,DWORD PTR [rbp-0x50],0x2a
+  a8:	89 4d b0             	mov    DWORD PTR [rbp-0x50],ecx
+  ab:	8b 4d b0             	mov    ecx,DWORD PTR [rbp-0x50]
+  ae:	89 45 ac             	mov    DWORD PTR [rbp-0x54],eax
+  b1:	89 c8                	mov    eax,ecx
+  b3:	99                   	cdq
+  b4:	b9 2a 00 00 00       	mov    ecx,0x2a
+  b9:	f7 f9                	idiv   ecx
+  bb:	89 45 b0             	mov    DWORD PTR [rbp-0x50],eax
+  be:	8b 45 b0             	mov    eax,DWORD PTR [rbp-0x50]
+  c1:	99                   	cdq
+  c2:	f7 f9                	idiv   ecx
+  c4:	89 55 b0             	mov    DWORD PTR [rbp-0x50],edx
+  c7:	8b 4d b0             	mov    ecx,DWORD PTR [rbp-0x50]
+  ca:	83 c1 01             	add    ecx,0x1
+  cd:	89 4d b0             	mov    DWORD PTR [rbp-0x50],ecx
+  d0:	8b 4d b0             	mov    ecx,DWORD PTR [rbp-0x50]
+  d3:	83 c1 ff             	add    ecx,0xffffffff
+  d6:	89 4d b0             	mov    DWORD PTR [rbp-0x50],ecx
+  d9:	8b 4d ac             	mov    ecx,DWORD PTR [rbp-0x54]
+  dc:	89 c8                	mov    eax,ecx
+  de:	5d                   	pop    rbp
+  df:	c3                   	ret
