@@ -1,0 +1,59 @@
+
+aarch64_main.o:	file format mach-o arm64
+
+Disassembly of section __TEXT,__text:
+
+0000000000000000 <ltmp0>:
+       0: ff 43 01 d1  	sub	sp, sp, #80
+       4: 00 00 80 52  	mov	w0, #0
+       8: ff 4f 00 b9  	str	wzr, [sp, #76]
+       c: 88 0a 80 52  	mov	w8, #84
+      10: e8 4b 00 b9  	str	w8, [sp, #72]
+      14: ff 47 00 b9  	str	wzr, [sp, #68]
+      18: 88 dc 80 52  	mov	w8, #1764
+      1c: e8 43 00 b9  	str	w8, [sp, #64]
+      20: 28 00 80 52  	mov	w8, #1
+      24: e8 3f 00 b9  	str	w8, [sp, #60]
+      28: ff 3b 00 b9  	str	wzr, [sp, #56]
+      2c: e8 37 00 b9  	str	w8, [sp, #52]
+      30: ff 33 00 b9  	str	wzr, [sp, #48]
+      34: ff 2f 00 b9  	str	wzr, [sp, #44]
+      38: e8 2b 00 b9  	str	w8, [sp, #40]
+      3c: e8 27 00 b9  	str	w8, [sp, #36]
+      40: ff 23 00 b9  	str	wzr, [sp, #32]
+      44: ff 1f 00 b9  	str	wzr, [sp, #28]
+      48: 4a 05 80 52  	mov	w10, #42
+      4c: ea 1b 00 b9  	str	w10, [sp, #24]
+      50: ea 17 00 b9  	str	w10, [sp, #20]
+      54: ff 13 00 b9  	str	wzr, [sp, #16]
+      58: 48 05 80 12  	mov	w8, #-43
+      5c: e8 0f 00 b9  	str	w8, [sp, #12]
+      60: 88 00 80 52  	mov	w8, #4
+      64: e8 0b 00 b9  	str	w8, [sp, #8]
+      68: ea 07 00 b9  	str	w10, [sp, #4]
+      6c: ea 03 00 b9  	str	w10, [sp]
+      70: e8 03 40 b9  	ldr	w8, [sp]
+      74: 08 a9 00 11  	add	w8, w8, #42
+      78: e8 03 00 b9  	str	w8, [sp]
+      7c: e8 03 40 b9  	ldr	w8, [sp]
+      80: 08 a9 00 71  	subs	w8, w8, #42
+      84: e8 03 00 b9  	str	w8, [sp]
+      88: e8 03 40 b9  	ldr	w8, [sp]
+      8c: 08 7d 0a 1b  	mul	w8, w8, w10
+      90: e8 03 00 b9  	str	w8, [sp]
+      94: e8 03 40 b9  	ldr	w8, [sp]
+      98: 08 0d ca 1a  	sdiv	w8, w8, w10
+      9c: e8 03 00 b9  	str	w8, [sp]
+      a0: e8 03 40 b9  	ldr	w8, [sp]
+      a4: 09 0d ca 1a  	sdiv	w9, w8, w10
+      a8: 29 7d 0a 1b  	mul	w9, w9, w10
+      ac: 08 01 09 6b  	subs	w8, w8, w9
+      b0: e8 03 00 b9  	str	w8, [sp]
+      b4: e8 03 40 b9  	ldr	w8, [sp]
+      b8: 08 05 00 11  	add	w8, w8, #1
+      bc: e8 03 00 b9  	str	w8, [sp]
+      c0: e8 03 40 b9  	ldr	w8, [sp]
+      c4: 08 05 00 71  	subs	w8, w8, #1
+      c8: e8 03 00 b9  	str	w8, [sp]
+      cc: ff 43 01 91  	add	sp, sp, #80
+      d0: c0 03 5f d6  	ret

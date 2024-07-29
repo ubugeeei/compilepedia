@@ -1,0 +1,21 @@
+
+aarch64_main.o:	file format mach-o arm64
+
+Disassembly of section __TEXT,__text:
+
+0000000000000000 <ltmp0>:
+       0: ff 43 00 d1  	sub	sp, sp, #16
+       4: 00 00 80 52  	mov	w0, #0
+       8: ff 0f 00 b9  	str	wzr, [sp, #12]
+       c: 00 e4 00 2f  	movi	d0, #0000000000000000
+      10: e0 0b 00 bd  	str	s0, [sp, #8]
+      14: 88 14 8e 52  	mov	w8, #28836
+      18: a8 f3 a7 72  	movk	w8, #16285, lsl #16
+      1c: 00 01 27 1e  	fmov	s0, w8
+      20: e0 07 00 bd  	str	s0, [sp, #4]
+      24: 08 ad 99 52  	mov	w8, #52584
+      28: e8 f1 b7 72  	movk	w8, #49039, lsl #16
+      2c: 00 01 27 1e  	fmov	s0, w8
+      30: e0 03 00 bd  	str	s0, [sp]
+      34: ff 43 00 91  	add	sp, sp, #16
+      38: c0 03 5f d6  	ret
